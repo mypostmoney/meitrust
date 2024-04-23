@@ -3,8 +3,7 @@ import { PrismaAdapter } from "@next-auth/prisma-adapter";
 import { getServerSession, type NextAuthOptions } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import TwitterProvider from 'next-auth/providers/twitter';
-import { Session } from "@/types/auth";
-import { Profile } from '@/types/auth';
+import { Session, Profile } from "@/types/auth";
 import NextAuth from "next-auth";
 import type { NextApiRequest, NextApiResponse } from "next"
 import { API_HOST } from "@/lib/api/move";

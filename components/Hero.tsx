@@ -1,0 +1,38 @@
+import React from 'react';
+import { useRouter } from 'next/navigation';
+import { TypeAnimation } from 'react-type-animation';
+import { AUTH_API_BASE, LOGIN_PAGE_PATH } from "@shinami/nextjs-zklogin";
+
+export default function Hero() {
+
+    const router = useRouter()
+    return (
+        <div className="flex flex-col flex-1 items-center w-screen mt-40">
+            <div className="text-3xl text-sky-500 font-bold tracking-tight leading-none">One Post, <span className='px-3'>Everywhere</span></div>
+            {/* <div className="text-3xl text-sky-500 font-bold tracking-tight leading-none mt-8">200 million creators</div> */}
+            <div className='flex flex-col items-center gap-y-3 mt-10'>
+                <TypeAnimation
+                    sequence={[
+                        // Same substring at the start will only be typed out once, initially
+                        'Create',
+                        2000, 
+                        'Distribute',
+                        2000, 
+                        'Monetize',
+                        2000,
+                        'Own',
+                        2000
+                    ]}
+                    wrapper="div"
+                    speed={60}
+                    style={{ fontSize: '1.875rem', lineHeight: '2.25rem', fontWeight: '700', letterSpacing: '-0.025e'}}
+                    repeat={Infinity}
+                />
+            </div>
+
+            <button className='bg-sky-500 py-1 px-4 rounded-lg hover:bg-sky-800 mt-10' onClick={() => router.push(`${LOGIN_PAGE_PATH}`)}>
+                <span className='text-white text-sm font-semibold leading-relaxed'>Get Started</span>
+            </button>
+        </div>
+    )
+}
