@@ -1,4 +1,5 @@
-import "@/styles/globals.css";
+// import "@/styles/globals.css";
+import './globals.css'
 import type { AppProps } from "next/app";
 import { ZkLoginSessionProvider } from "@shinami/nextjs-zklogin/client";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
