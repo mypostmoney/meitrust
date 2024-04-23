@@ -8,7 +8,7 @@ export default function Hero() {
     const router = useRouter()
     return (
         <div className="flex flex-col flex-1 items-center w-screen mt-40">
-            <div className="text-3xl text-sky-500 font-bold tracking-tight leading-none">One Post, <span className='px-3'>Everywhere</span></div>
+            <div className="text-3xl text-sky-500 font-bold tracking-tight leading-none">Socail Asset, <span className='px-3'>Everywhere</span></div>
             {/* <div className="text-3xl text-sky-500 font-bold tracking-tight leading-none mt-8">200 million creators</div> */}
             <div className='flex flex-col items-center gap-y-3 mt-10'>
                 <TypeAnimation
